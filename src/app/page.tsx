@@ -1,9 +1,26 @@
+"use client"
 import Header from './components/Header';
 import { Container, Banner } from './styles';
 import Image from 'next/image';
 import bannerDesktop from '../app/images/banner-image-desktop.png';
+import { useEffect } from 'react';
 
 export default function Home() {
+
+  useEffect(() => {
+    const html = document.querySelector('html');
+    if (html) {
+      html.style.overflowX = 'hidden';
+    }
+    return () => {
+      const html = document.querySelector('html');
+      if (html) {
+        html.style.overflowX = 'auto';
+      }
+    };
+  }, []);
+
+  
   return (
     <Container>
       <Header />

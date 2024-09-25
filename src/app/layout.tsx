@@ -16,6 +16,13 @@ export default function Layout({ children }: LayoutProps) {
               font-weight: 100 900;
               font-style: normal;
             }
+            html, body {
+              margin: 0; /* Adicionando margin: 0 */
+              padding: 0; /* Adicionando padding: 0 */
+              width: 100%;
+              height: 100%;
+              overflow-x: hidden; /* Para prevenir overflow horizontal */
+            }
             body {
               font-family: 'Inter', sans-serif;
             }
