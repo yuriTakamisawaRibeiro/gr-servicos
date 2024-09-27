@@ -1,6 +1,6 @@
 "use client";
 import Header from './components/Header';
-import { Container, Banner, BannerText, AboutUsSection } from './styles';
+import { Container, Banner, BannerText, AboutUsSection, ChooseUsSection } from './styles';
 import Image from 'next/image';
 import bannerDesktop from '../app/images/banner-image-desktop.png';
 import sweepingFloor from '../app/images/sweeping-floor-desktop.png';
@@ -23,7 +23,7 @@ export default function Home() {
 
   const handleClick = () => {
     alert('Botão clicado!');
-};
+  };
 
 
   return (
@@ -71,6 +71,10 @@ export default function Home() {
           />
         </div>
       </AboutUsSection>
+
+      <ChooseUsSection>
+        <h2>Por que nos escolher?</h2>
+      </ChooseUsSection>
     </Container>
   );
 }
