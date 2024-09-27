@@ -31,4 +31,27 @@ export const Banner = styled.div`
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1; 
   }
+
+`;
+
+
+export const BannerText = styled.div`
+  position: absolute;
+  color: #ffffff; 
+  z-index: 2;
+  margin-left: 40px;
+  top: 20%;
+
+  h1 {
+    font-size: 38px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 35px;
+
+    span {
+      color: #00F8D5; /* Define a cor do texto do span */
+    }
+  }
 `;
