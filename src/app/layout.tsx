@@ -13,12 +13,12 @@ export default function Layout({ children }: LayoutProps) {
             @font-face {
               font-family: 'Inter';
               src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
-              font-weight: 100 900;
+              font-weight: 100 300 900;
               font-style: normal;
             }
             html, body {
-              margin: 0; /* Adicionando margin: 0 */
-              padding: 0; /* Adicionando padding: 0 */
+              margin: 0; 
+              padding: 0; 
               width: 100%;
               height: 100%;
               overflow-x: hidden; /* Para prevenir overflow horizontal */

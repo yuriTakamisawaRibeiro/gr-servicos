@@ -10,8 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Banner = styled.div`
- width: 100vw; /* Use 100vw para garantir que preencha toda a largura */
-  height: 100vh; /* Defina a altura do banner */
+  width: 100vw; /* Use 100vw para garantir que preencha toda a largura */
   position: relative;
   overflow: hidden; /* Para garantir que nada extravase */
 
@@ -31,9 +30,7 @@ export const Banner = styled.div`
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1; 
   }
-
 `;
-
 
 export const BannerText = styled.div`
   position: absolute;
@@ -51,7 +48,34 @@ export const BannerText = styled.div`
     font-size: 35px;
 
     span {
-      color: #00F8D5; /* Define a cor do texto do span */
+      color: #00F8D5; 
+    }
+  }
+`;
+
+export const AboutUsSection = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  align-items: center; 
+  margin-top: 50px;
+
+  .text-container {
+    margin-left: 40px;
+    p {
+      font-size: 24px;
+      font-weight: 300;
+
+    }
+  }
+
+  .image-container {
+    margin-left: 20px; 
+    margin-right: 30px;
+
+    img {
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2); 
+      border-radius: 8px; 
+      max-width: 100%; 
     }
   }
 `;
